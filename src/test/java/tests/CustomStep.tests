@@ -1,0 +1,15 @@
+Test: Verify pending country sales report of with custom step
+#All #customStep1
+Collection: login in admin side
+Verify: @reports_Menu is displayed
+Step: Click on @reports_Menu
+Step: Scroll to coordinate (50,100)
+Verify: @countrySales_Tab is displayed
+Step: Click on @countrySales_Tab
+Step: Pause until @pageHeading is display
+Verify: @page_Heading text is equal to 'Country sales'
+Code: Select pending option from order status dropdown
+Code: Click on run report button
+Step: pause 3 sec
+Code: verify country name and number of pending orders (United Kingdom,2)
+End

@@ -1,0 +1,6 @@
+{
+  "reports_Menu": "(//span[contains(text(), 'Reports')])[1]",
+  "countrySales_Tab": "(//span[contains(text(), 'Country sales')])[1]",
+  "country_Name": "//tbody/tr/td[1]",
+  "total_Order": "//tbody/tr/td[3]"
+}

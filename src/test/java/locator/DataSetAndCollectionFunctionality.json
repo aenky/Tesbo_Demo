@@ -1,0 +1,19 @@
+{
+  "Catalog_Menu": "(//span[contains(text(), 'Catalog')])[1]",
+  "products_Tab": "(//span[contains(text(), 'Products')])[1]",
+  "categories_Tab": "(//span[contains(text(), 'Categories')])[1]",
+  "product_TextBox": "SearchProductName",
+  "category_TextBox": "SearchCategoryName",
+  "search_Btn": "//button[contains(text(),'Search')]",
+  "product_List": "//tbody/tr",
+  "product_Name": "//tbody/tr/td[3]",
+  "product_SKU": "//tbody/tr/td[4]",
+  "product_Price": "//tbody/tr/td[5]",
+  "product_Stock_Quantity": "//tbody/tr/td[6]",
+  "product_Product_Type": "//tbody/tr/td[7]",
+  "product_Published": "//tbody/tr/td[8]/i",
+  "categories_List": "//tbody/tr",
+  "category_Name": "//tbody/tr/td[1]",
+  "category_Published": "//tbody/tr/td[2]/i",
+  "category_DisplayOrder": "//tbody/tr/td[3]"
+}

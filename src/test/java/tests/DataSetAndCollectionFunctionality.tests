@@ -1,0 +1,51 @@
+Collection Name: login in admin side
+Step: Enter {Data.Credentials.adminEmail} in to @email_Box
+Step: Enter {Data.Credentials.adminPassword} in @password_Box
+Step: Click on @login_Btn
+Step: Pause until @logout_Btn is display
+Verify: @logout_Btn is displayed
+End
+
+Test: Verify product details with excel data set
+#All #dataSet
+DataSet: productDetails
+Collection: login in admin side
+Verify: @Catalog_Menu is displayed
+Step: Click on @Catalog_Menu
+Verify: @products_Tab is displayed
+Step: Click on @products_Tab
+Step: Pause until @pageHeading is display
+Verify: @page_Heading text is equal to 'Products'
+Step: Enter {ProductName} in to @product_TextBox
+Step: Click on @search_Btn
+Step: pause 3 sec
+Step: Scroll to coordinate (50,500)
+Verify: @product_List has size of '1'
+Verify: @product_Name text is equal to {ProductName}
+Verify: @product_SKU text is equal to {SKU}
+Verify: @product_Price text is equal to {Price}
+Verify: @product_Stock_Quantity text is equal to {StockQuantity}
+Verify: @product_Product_Type text is equal to {ProductType}
+Verify: Get attribute 'nop-value' of @product_Published is equal to {Published}
+Step: pause 2 sec
+End
+
+Test: Verify categories details with array list functionality of data set
+#All #dataSet1
+DataSet: CategoriesDetails
+Collection: login in admin side
+Verify: @Catalog_Menu is displayed
+Step: Click on @Catalog_Menu
+Verify: @categories_Tab is displayed
+Step: Click on @categories_Tab
+Step: Pause until @pageHeading is display
+Verify: @page_Heading text is equal to 'Categories'
+Verify: @categories_List has size of '15'
+Step: Enter {CategoryName} in to @category_TextBox
+Step: Click on @search_Btn
+Step: pause 3 sec
+Verify: @category_Name text is equal to {CategoryName}
+Verify: Get attribute 'nop-value' of @category_Published is equal to {Published}
+Verify: @category_DisplayOrder text is equal to {DisplayOrder}
+Step: pause 2 sec
+End

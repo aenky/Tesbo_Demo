@@ -1,0 +1,11 @@
+{
+
+  "email_Box":"Email",
+  "password_Box":"Password",
+  "login_Btn":"//input[@type='submit']",
+  "loginPageHeading": "//h1",
+  "logout_Btn":"//a[contains(text(), 'Logout')]",
+  "page_Heading": "(//h1)[2]",
+  "emailErrorMsg": "Email-error",
+  "summeryErrorMsg": "//div[@class='message-error validation-summary-errors']"
+}

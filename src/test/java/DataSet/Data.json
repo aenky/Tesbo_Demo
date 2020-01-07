@@ -1,0 +1,30 @@
+{
+  "Credentials": {
+      "adminEmail": "admin@yourstore.com",
+      "adminPassword": "admin"
+  },
+  "LoginPageErrorMessage": {
+    "EmailErrorMsg": "Please enter your email",
+    "SummeryOfErrorMsg": "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect"
+  },
+  "CategoriesDetails": [
+    {
+      "CategoryName": "Computers",
+      "Published": true,
+      "DisplayOrder": 1
+    },
+    {
+      "CategoryName": "Electronics",
+      "Published": true,
+      "DisplayOrder": 2
+    },
+    {
+      "CategoryName": "Jewelry",
+      "Published": true,
+      "DisplayOrder": 6
+    }
+  ],
+  "productDetails": {
+    "excelFile": "./src/test/Resource/Products.xlsx"
+  }
+}

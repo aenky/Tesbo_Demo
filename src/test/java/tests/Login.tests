@@ -1,0 +1,44 @@
+Test: Login on admin side
+#All #Login
+Verify: @loginPageHeading text is equal to 'Admin area demo'
+Verify: @login_Btn is displayed
+Step: Enter 'admin@yourstore.com' in to @email_Box
+Step: Enter 'admin' in @password_Box
+Step: Click on @login_Btn
+Step: Pause until @logout_Btn is display
+Verify: Page Title is equal to 'Dashboard / nopCommerce administration'
+Verify: @page_Heading text is equal to ignore case 'dashboard'
+Step: pause 2 sec
+End
+
+Test: Login on admin side with data set
+#All #Login
+DataSet: Credentials
+Verify: Page Title is equal to ignore case 'your store. login'
+Verify: @login_Btn is displayed
+Step: Enter {adminEmail} in to @email_Box
+Step: Enter {adminPassword} in @password_Box
+Step: Click on @login_Btn
+Step: Pause until @logout_Btn is display
+Verify: Current url is equal to 'https://admin-demo.nopcommerce.com/admin/'
+Step: pause 2 sec
+End
+
+Test: Verify Login page validation with data set and inline data set
+#All #Login1
+DataSet: LoginPageErrorMessage
+Verify: @login_Btn is displayed
+Step: Click on @login_Btn
+Verify: @emailErrorMsg text is equal to {EmailErrorMsg}
+Step: Enter {Data.Credentials.adminEmail} in to @email_Box
+Step: Click on @login_Btn
+Verify: @summeryErrorMsg text is equal to {SummeryOfErrorMsg}
+Step: Enter {Data.Credentials.adminPassword} in @password_Box
+Step: Click on @login_Btn
+Step: Pause until @logout_Btn is display
+Verify: @logout_Btn is displayed
+Step: pause 2 sec
+End
+
+
+

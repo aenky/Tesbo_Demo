@@ -1,0 +1,28 @@
+{
+  "run": {
+    "baseUrl": "https://admin-demo.nopcommerce.com/",
+    "by": {
+      "tag": [
+        "customStep1"
+      ]
+    },
+    "browser": {
+      "name": [
+        "chrome"
+      ]
+    },
+
+    "parallel": {
+      "status": false,
+      "count": "3"
+    },
+    "retryAnalyser":{
+      "count":"0"
+    },
+    "binaries": {
+      "chrome": ""
+    },
+
+    "highlightElement": true
+  }
+}
