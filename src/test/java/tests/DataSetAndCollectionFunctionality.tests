@@ -31,7 +31,7 @@ Step: pause 2 sec
 End
 
 Test: Verify categories details with array list functionality of data set
-#All #dataSet1
+#All #dataSet
 DataSet: CategoriesDetails
 Collection: login in admin side
 Verify: @Catalog_Menu is displayed

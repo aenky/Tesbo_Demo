@@ -1,5 +1,5 @@
 Test: Verify pending country sales report of with custom step
-#All #customStep1
+#All #customStep
 Collection: login in admin side
 Verify: @reports_Menu is displayed
 Step: Click on @reports_Menu

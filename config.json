@@ -4,7 +4,7 @@
     "seleniumAddress" : "http://grid.tesbo.io:4444/wd/hub",
     "by": {
       "tag": [
-        "Login"
+        "Login","dataSet"
       ]
     },
     "browser": {
@@ -14,7 +14,7 @@
     },
 
     "parallel": {
-      "status": false,
+      "status": true,
       "count": "4"
     },
     "retryAnalyser":{
@@ -36,5 +36,11 @@
 
     "IsGrid" : true,
     "highlightElement": true
+  },
+  "cloudIntegration" : {
+    "report": true,
+    "apiKey": "3bf28a9b76c282a4758fd1f4219974a7",
+    "projectKey" : "5e2c13792141a00e4a806196",
+    "buildName":"Tesbo_Demo"
   }
 }
