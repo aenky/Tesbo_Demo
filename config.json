@@ -1,20 +1,21 @@
 {
   "run": {
     "baseUrl": "https://admin-demo.nopcommerce.com/",
+    "seleniumAddress" : "http://grid.tesbo.io:4444/wd/hub",
     "by": {
       "tag": [
-        "customStep1"
+        "Login"
       ]
     },
     "browser": {
       "name": [
-        "chrome"
+        "chrome","firefox"
       ]
     },
 
     "parallel": {
       "status": false,
-      "count": "3"
+      "count": "4"
     },
     "retryAnalyser":{
       "count":"0"
@@ -22,7 +23,18 @@
     "binaries": {
       "chrome": ""
     },
+    "capabilities": {
+      "chrome": {
+        "version" : "79.0.3945.117",
+        "platform" : "LINUX"
+      },
+      "firefox": {
+        "version" : "72.0.1",
+        "platform" : "LINUX"
+      }
+    },
 
+    "IsGrid" : true,
     "highlightElement": true
   }
 }
