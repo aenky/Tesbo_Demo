@@ -24,7 +24,7 @@
         </dependency>
     </dependencies>
          
-         <build>
+        <build>
 
         <plugins>
             <plugin>
@@ -52,11 +52,9 @@
                     <mainClass>runner.Runner</mainClass>
                     <classpathScope>test</classpathScope>
                 </configuration>
-            </plugin>        
-                  </plugins>
+            </plugin>        </plugins>
 
 
 
     </build>
-
 </project>
