@@ -9,12 +9,12 @@
     },
     "browser": {
       "name": [
-        "chrome",
+        "chrome","firefox"
       ]
     },
 
     "parallel": {
-      "status": true,
+      "status": false,
       "count": "2"
     },
     "retryAnalyser":{
