@@ -15,7 +15,7 @@
 
     "parallel": {
       "status": true,
-      "count": "4"
+      "count": "2"
     },
     "retryAnalyser":{
       "count":"0"
