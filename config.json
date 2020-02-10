@@ -4,7 +4,7 @@
     "seleniumAddress" : "http://grid.tesbo.io:4444/wd/hub",
     "by": {
       "tag": [
-        "Login","dataSet"
+        "Login"
       ]
     },
     "browser": {
